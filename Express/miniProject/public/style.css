@@ -1,0 +1,55 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Navbar styling */
+header {
+  background: #2c3e50; /* dark blue-gray */
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* Navigation links */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  background: #3498db; /* light blue */
+  color: #fff;
+}
+
+/* Active link style (optional) */
+nav a.active {
+  background: #1abc9c; /* teal */
+  color: #fff;
+}

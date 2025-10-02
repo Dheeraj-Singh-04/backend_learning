@@ -1,0 +1,27 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{author}
+    link(rel="stylesheet", href="../style.css")
+
+  body
+      header 
+          nav
+              a(href="/") Home
+              a(href="/courses") Courses
+              a(href="/courses/add") Add Course
+              a(href="/users") Users
+
+      h1 Courses List
+      if author
+        p Author: #{author}
+      else
+        p No Data of author
+
+      if bookDetails && bookDetails.length
+        ul
+          each course, index in bookDetails
+            li #{index + 1}. #{course.title} - #{course.description}
+      else
+        p No courses available.

@@ -1,0 +1,20 @@
+node_modules/
+
+#Logs
+*.log
+
+#Environment variables
+.env
+
+#os files
+.DS_Store
+Thumbs.db
+
+#IDE/editor files
+.vscode/
+*.swap
+
+#cache
+.npm
+.npm-cache
+.cache
