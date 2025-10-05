@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta page</title>
+  </head>
+  <body>
+    <h1>This page belongs to <%= username%></h1>
+    <button>Follow</button>
+    <button>Message</button>
+    
+    <!-- use of loops in EJS -->
+    <h1>Followers</h1>
+    <ul>
+      <% for(let naam of name){%>
+      <li><%= naam%></li>
+      <%}%>
+    </ul>
+  </body>
+</html>
